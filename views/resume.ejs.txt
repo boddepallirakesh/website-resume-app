@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume - Boddepalli Rakesh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      color: #000;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      padding: 5px 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .contact-info, .footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-left: 20px;
+      padding-left: 0;
+      list-style-type: disc;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>RESUME</h1>
+  <h2>BODDEPALLI RAKESH</h2>
+  <div class="contact-info">
+    <p>B.Tech In Mechanical Engineering</p>
+    <p>Contact No: +91 9392599968</p>
+    <p>Email: rakeshboddepalli7@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rakesh-boddipalli-aa2489286" target="_blank">
+      https://www.linkedin.com/in/rakesh-boddipalli-aa2489286</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>CAREER OBJECTIVE:</h3>
+    <p>
+      To work in an organization where a culture of freedom and initiative is ensured, facilitating my contribution through thoughts and actions toward the company’s vision, and thereby achieving self-development by playing a significant role in building the organization.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>TECHNICAL SKILLS:</h3>
+    <ul>
+      <li>Account security: AWS Identity and Access Management (IAM)</li>
+      <li>Networking: Architecting on networking (VPC, IP-addressing, subnets, internet gateways, route tables, NAT gateway, elastic-IP address, elastic network interface)</li>
+      <li>Compute: Architecting on compute services like EC2 instances, storage for instances (SEBS), serverless compute (Lambda)</li>
+      <li>Storage: Architecting on storage services such as Block storage (EBS), File storage (EFS), Object storage (S3), data migration tools</li>
+      <li>Database services: Architecting on database services like RDS (SQL), DynamoDB (NoSQL), database caching, Redshift</li>
+      <li>Monitoring & Scaling: Architecting on CloudWatch (alarms and events), CloudTrail, Elastic Load Balancer (Application Load Balancer), Autoscaling</li>
+      <li>Automation: Architecting on CloudFormation to define cloud infrastructure in a declarative JSON or YAML template</li>
+      <li>Containers: Architecting on AWS containers and microservices (e.g., Amazon ECR, EKS, Fargate)</li>
+      <li>Serverless: Architecting on serverless solutions like API gateways, SQS, SNS, Kinesis, step functions</li>
+      <li>Edge services: Architecting on services like Route 53 (DNS), CloudFront (CDN), Shield, WAF</li>
+      <li>Backup and Recovery: Architecting on disaster planning, recovery plans, AWS Backup, and centralized automated data protection</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>DEVOPS TOOLS:</h3>
+    <p>| Git | GitHub | Docker | Kubernetes | Terraform | Jenkins | Ansible | Maven | Linux |</p>
+  </div>
+
+  <div class="section">
+    <h3>STRENGTHS:</h3>
+    <ul>
+      <li>Excellent communication and teamwork</li>
+      <li>Strong collaborative abilities</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>EXPERIENCE:</h3>
+    <p><strong>Internship</strong> - Cloud Institution, Bengaluru, India | Aug 2024 – Till Now</p>
+    <ul>
+      <li>Architected scalable cloud solutions using AWS services such as EC2, S3, RDS, and Lambda to support business applications.</li>
+      <li>Automated infrastructure deployment with Terraform and CloudFormation, reducing provisioning time by 40%.</li>
+      <li>Secured cloud environments through VPC configuration, IAM policies, and multi-layered network security protocols.</li>
+      <li>Streamlined application deployment with Docker, enhancing portability and resource efficiency.</li>
+      <li>Monitored cloud infrastructure with AWS CloudWatch, enabling proactive incident management and disaster recovery.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>PROJECTS:</h3>
+    <p><strong>Infrastructure Automation with AWS and Terraform</strong></p>
+    <ul>
+      <li>Designed a high-availability cloud architecture leveraging AWS services like EC2, S3, RDS, and Route 53.</li>
+      <li>Implemented Infrastructure as Code (IaC) with Terraform to automate and standardize resource provisioning.</li>
+      <li>Improved system reliability and scalability by configuring Elastic Load Balancers and Auto Scaling Groups.</li>
+      <li>&bull;</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>ACHIEVEMENTS:</h3>
+    <ul>
+      <li>AWS Academy Graduate – Cloud Foundations Certification</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>HOBBIES:</h3>
+    <ul>
+      <li>Writing short stories and creating photo/video edits</li>
+      <li>Exploring cloud technologies and contributing to open-source projects</li>
+      <li>Watching movies and playing online strategy games</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>ACADEMIC CREDENTIALS:</h3>
+    <ul>
+      <li>
+        <strong>B.Tech in Mechanical Engineering</strong><br>
+        Lendi Institute of Technology and Engineering, Vizianagaram, AP<br>
+        July 2020 – June 2024 | Percentage: 71%
+      </li>
+      <li>
+        <strong>Intermediate (10+2)</strong><br>
+        Sri Sai Krishna Jr College, Srikakulam, AP<br>
+        July 2018 – June 2020 | Percentage: 78%
+      </li>
+      <li>
+        <strong>SSC (High School)</strong><br>
+        Pragathi Public School, Priyagraharam, AP<br>
+        July 2017 – June 2018 | Percentage: 88%
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>DECLARATION:</h3>
+    <p>I affirm that all the information provided above is accurate to the best of my knowledge.</p>
+  </div>
+  
+  <div class="footer">
+    <p><a href="/logout">Logout</a></p>
+  </div>
+</body>
+</html>
