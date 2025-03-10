@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two-Page Resume PDF</title>
+  <!-- Load html2canvas and jsPDF from CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      font-family: Georgia, serif;
+    }
+    /* Each page is styled as an A4-sized element */
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: #fff;
+      margin: 20px auto;
+      box-sizing: border-box;
+      padding: 10mm;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Watermark styling with 6em font size */
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      font-size: 6em; /* 6em font size */
+      color: rgba(0, 0, 0, 0.05);
+      text-align: center;
+      pointer-events: none;
+      line-height: 1.2;
+    }
+    /* Header section styling */
+    .header-section {
+      text-align: center;
+      margin-bottom: 10mm;
+    }
+    .header-section h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .header-section h2 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .header-section h3 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+    /* Content section styling */
+    .content-section h2 {
+      margin-top: 5mm;
+      margin-bottom: 2mm;
+    }
+    .content-section p {
+      margin: 2mm 0;
+      line-height: 1.4;
+      font-size: 1em;
+    }
+    /* Download button styling with light leaf green background */
+    #downloadButton {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #add8e6;  /* Light blue background */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,191,255,0.7);
+    }
+  </style>
+</head>
+<body>
+  <!-- Page 1: Header, Career Objective, Technical Skills, Strengths -->
+  <div id="page1" class="page">
+    <!-- Watermark on page 1 -->
+    <div class="watermark">
+      <div>BODDEPALLI RAKESH</div>
+      <div>RESUME DEVOPS INTERN</div>
+    </div>
+    <div class="header-section">
+      <h1>RESUME</h1>
+      <h2>BODDEPALLI RAKESH</h2>
+      <h3>B.Tech In Mechanical Engineering</h3>
+      <p>Contact No: +91 9392599968 | Email: <a href="mailto:rakeshboddepalli7@gmail.com">rakeshboddepalli7@gmail.com</a></p>
+      <p>LinkedIn URL: <a href="https://www.linkedin.com/in/rakesh-boddipalli-aa2489286">https://www.linkedin.com/in/rakesh-boddipalli-aa2489286</a></p>
+    </div>
+    <div class="content-section">
+      <h2>CAREER OBJECTIVE:</h2>
+      <p>
+        To work in an organization where a culture of freedom and initiative fosters my contribution toward the company's vision while supporting self-development and playing a significant role in building the organization.
+      </p>
+      <h2>TECHNICAL SKILLS:</h2>
+      <p>• Account security: AWS Identity and Access Management (IAM)</p>
+      <p>• Networking: Architecting on networking (VPC, IP-addressing, subnets, internet gateways, route tables, NAT gateway, elastic-IP address, elastic network interface)</p>
+      <p>• Compute: Architecting on compute services (EC2 instances, storage for instances SEBS, serverless compute Lambda)</p>
+      <p>• Storage: Architecting on storage services (Block storage EBS, File storage EFS, Object storage S3, data migration tools)</p>
+      <p>• Database services: Architecting on (RDS, DynamoDB, Database caching, Redshift)</p>
+      <p>• Monitoring &amp; Scaling: CloudWatch, CloudTrail, Elastic Load Balancer, Autoscaling</p>
+      <p>• Automation: CloudFormation (JSON or YAML templates)</p>
+      <p>• Containers: AWS containers &amp; Microservices (ECR, EKS, Fargate)</p>
+      <p>• Serverless: API Gateways, SQS, SNS, Kinesis, Step Functions</p>
+      <p>• Edge services: Route 53, CloudFront, Shield, WAF</p>
+      <p>• Backup and Recovery: Disaster planning, AWS Backup, centralized data protection</p>
+      <p>• DevOps Tools: Git, GitHub, Docker, Kubernetes, Terraform, Jenkins, Ansible, Maven, Linux</p>
+      <h2>STRENGTHS:</h2>
+      <p>• Excellent Communication and Teamwork</p>
+      <p>• Strong communication and collaborative teamwork abilities</p>
+    </div>
+  </div>
+
+  <!-- Page 2: Experience, Projects, Achievements, Hobbies, Academic Credentials, Declaration -->
+  <div id="page2" class="page">
+    <!-- Watermark on page 2 -->
+    <div class="watermark">
+      <div>BODDEPALLI RAKESH</div>
+      <div>RESUME DEVOPS INTERN</div>
+    </div>
+    <div class="content-section">
+      <h2>EXPERIENCE:</h2>
+      <p><strong>Internship</strong></p>
+      <p>Cloud Institution, Bengaluru, India | Aug 2024 – February 2025</p>
+      <p>Architected scalable cloud solutions using AWS services to support business applications.</p>
+      <p>• Automated infrastructure deployment with Terraform and CloudFormation, reducing provisioning time by 40%.</p>
+      <p>• Secured cloud environments via VPC configuration, IAM policies, and network security protocols.</p>
+      <p>• Streamlined application deployment with Docker.</p>
+      <p>• Monitored infrastructure using AWS CloudWatch.</p>
+      <p><strong>TYA Software Solutions, Bengaluru, Karnataka</strong></p>
+      <p>DevOps Intern | February 2025 – Till Now</p>
+      <h2>PROJECTS:</h2>
+      <p><strong>Infrastructure Automation with AWS and Terraform</strong></p>
+      <p>• Designed a high-availability cloud architecture leveraging AWS services.</p>
+      <p>• Implemented IaC with Terraform to automate resource provisioning.</p>
+      <p>• Configured Elastic Load Balancers and Auto Scaling Groups.</p>
+      <h2>ACHIEVEMENTS:</h2>
+      <p>• AWS Academy Graduate – Cloud Foundations Certification</p>
+      <h2>HOBBIES:</h2>
+      <p>• Writing short stories and creating photo/video edits</p>
+      <h2>ACADEMIC CREDENTIALS:</h2>
+      <p><strong>B.Tech in Mechanical Engineering</strong><br>
+         Lendi Institute of Technology and Engineering, Vizianagaram, AP<br>
+         July 2020 – June 2024 | Percentage: 71%</p>
+      <p><strong>Intermediate (10+2)</strong><br>
+         Sri Sai Krishna Jr College, Srikakulam, AP<br>
+         July 2018 – June 2020 | Percentage: 78%</p>
+      <p><strong>SSC (High School)</strong><br>
+         Pragathi Public School, Priyagraharam, AP<br>
+         July 2017 – June 2018 | Percentage: 88%</p>
+      <h2>DECLARATION:</h2>
+      <p>I affirm that all the information provided above is accurate to the best of my knowledge.</p>
+    </div>
+  </div>
+
+  <button id="downloadButton">Download Resume</button>
+
+  <script>
+    document.getElementById('downloadButton').addEventListener('click', function() {
+      const { jsPDF } = window.jspdf;
+      var pdf = new jsPDF('p', 'mm', 'a4');
+      var imgWidth = 210; // A4 width in mm
+      
+      // Capture Page 1
+      html2canvas(document.getElementById('page1'), { scale: 2 }).then(canvas1 => {
+        var imgData1 = canvas1.toDataURL('image/png');
+        var imgHeight1 = canvas1.height * imgWidth / canvas1.width;
+        pdf.addImage(imgData1, 'PNG', 0, 0, imgWidth, imgHeight1);
+        
+        // Capture Page 2
+        html2canvas(document.getElementById('page2'), { scale: 2 }).then(canvas2 => {
+          var imgData2 = canvas2.toDataURL('image/png');
+          var imgHeight2 = canvas2.height * imgWidth / canvas2.width;
+          pdf.addPage();
+          pdf.addImage(imgData2, 'PNG', 0, 0, imgWidth, imgHeight2);
+          
+          // Save PDF with exactly two pages
+          pdf.save('resume.pdf');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
